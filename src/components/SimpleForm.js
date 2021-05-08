@@ -67,7 +67,7 @@ const steps = [
         user: true,
         validator: (value) => {
           if (value != "egg") {
-            return 'No, It is something we eat.';
+            return 'No, It is something white and we eat🥚.';
           }
           return true;
         },

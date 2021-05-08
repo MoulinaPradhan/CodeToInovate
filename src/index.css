@@ -5,10 +5,39 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: black;
+
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+.heading{
+  font-size: 3rem;
+  text-align: center;
+  font-weight: 600;
+  z-index: 1;
+  color: "white"!important;
+}
+main{
+  min-height: 90vh;
+}
+.overlay{
+  opacity:1;
+  background: url("https://i.pinimg.com/originals/1d/73/5a/1d735ad8eee8350adc96d50e1421ee6d.gif");
+  background-repeat: no-repeat;
+  background-color: black;
+  background-position: center 180px;
+  background-size: contain;
+  position:fixed;
+  width:100%;
+  height:100%;
+  top:0px;
+  left:0px;
+  z-index:-1000;
+}
+
+/* .floating-tip{
+  position: absolute;
+right: 10px;
+} */
