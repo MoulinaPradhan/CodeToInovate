@@ -7,7 +7,7 @@ const Header = () => {
        Translate from
      <Typewriter
      options={{
-     strings: ['Speach to Text..','Text to Speach..'],
+     strings: ['Speech to Text..','Text to Speech..'],
     autoStart: true,
     loop: true,
   }}

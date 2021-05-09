@@ -1,42 +1,57 @@
 import React from 'react'
 import Carousel from 'react-bootstrap/Carousel'
+import Pic1 from '../images/pic1.jpeg'
+import Pic5 from '../images/pic5.png'
+import Pic2 from '../images/pic2.jpeg'
+import Pic6 from '../images/pic6.jpeg'
 
 const CarouselTranslators = () => {
     return (
         <div>
-            <Carousel>
-  <Carousel.Item interval={500}>
+    <Carousel pause='hover'>
+
+
+  <Carousel.Item interval={1000}>
+  <a href ="https://shinigamirex-tts.herokuapp.com/">
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=First slide&bg=373940"
-      alt="First slide"
+      className="d-block w-10"
+      src={Pic2}
+      alt="text to speech"
     />
+
     <Carousel.Caption>
-      <h3>First slide label</h3>
-      <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+      <h4 style={{color:"white"}}>Text to Speech</h4>
     </Carousel.Caption>
+    </a>
   </Carousel.Item>
-  <Carousel.Item interval={500}>
+
+
+
+  <Carousel.Item interval={1000}>
+   <a href ="https://shinigamirex-stt.herokuapp.com/">
     <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Second slide&bg=282c34"
-      alt="Second slide"
+      className="d-block w-10"
+      src={Pic6}
+      alt="speech to text"
     />
     <Carousel.Caption>
-      <h3>Second slide label</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
+      <h4>Speech to Text</h4>
+     
     </Carousel.Caption>
+    </a>
   </Carousel.Item>
   <Carousel.Item>
-    <img
-      className="d-block w-100"
-      src="holder.js/800x400?text=Third slide&bg=20232a"
-      alt="Third slide"
+   <a href = "https://translator-bot-apps.herokuapp.com/">
+   <img
+      className="d-block w-10"
+      src={Pic5}
+      alt="bot"
     />
     <Carousel.Caption>
-      <h3>Third slide label</h3>
-      <p>Praesent commodo cursus magna, vel scelerisque nisl consectetur.</p>
+      <h3>Chat Bot</h3>
+    
     </Carousel.Caption>
+    </a>
   </Carousel.Item>
 </Carousel>
         </div>
